@@ -1,0 +1,428 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  
+}
+
+/* Navbar Start */
+#navbar {
+  background: #f9f9f9;
+}
+#logo {
+  font-size: 36px;
+  font-weight: 550;
+  color: black;
+  text-shadow: 0px 1px 1px black;
+  margin-bottom: 5px;
+}
+#logo span {
+  color: hsla(239, 84%, 55%, 0.906);
+}
+.navbar-toggler span {
+  color: rgba(63, 10, 208, 0.919);
+}
+.navbar-nav {
+  margin-left: 20px;
+}
+.nav-item .nav link {
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  transition: 0.5s ease;
+  
+}
+.nav-item .nav-link:hover {
+  background: hsl(243, 89%, 50%, 0.8);
+  color: white;
+}
+#navbar form button {
+  background: rgb(31, 15, 215);
+  border: none;
+}
+/* Navbar End */
+
+/*Home Section Start */
+.home{
+  width: 100%;
+  height:100vh;
+  background-image: linear-gradient(#a3e7f80c,#e3dedf00), url("image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.home .content{
+  text-align: center;
+  padding-top: 200px;
+}
+.home .content h5{
+  color: white;
+  font-size: 38px;
+  font-weight: 500;
+  text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+  color:#f9f9f9;
+  font-size:70px;
+  font-weight: 550;
+  text-shadow: 0px 1px 1px black;
+  margin-top: 5px;
+}
+.changecontent ::after{
+  content: '';
+  color: #3910e1;
+  text-shadow: 0px 1px 1px black;
+  animation: changetext 10s infinite linear;
+}
+/* Add this */
+@keyframes changetext {
+  0% { content: "France"; }
+  10% { content: "Spain"; }
+  /* Add other percentages */
+  100% { content: "India"; }
+}
+
+
+
+
+
+.home .content p{
+  color:#f9f9f9;
+  font-size: 15px;
+  font-weight: 600;
+  text-shadow: 0px 1px 1px black;
+  margin-bottom: 30px;
+  margin-top: 5px;
+}
+.home .content a{
+  padding: 10px;
+  background: white;
+  color:black;
+  letter-spacing: 2px;
+  font-weight: 550;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+
+.home .content a:hover{
+  background: #1d0be9;
+  color: white;
+}
+@media (max-width:850px){
+  .home{
+      background-position: 50%;
+  }
+}
+@media (max-width:450px){
+  .home .content h5{
+      font-size: 25px;
+  }
+  .home .content h1{
+      font-size: 38px;
+  }
+  .home .content p{
+      font-size: 13px;
+  } 
+}
+/*Home Section End */
+
+/*Section Book Start */
+.book{
+  background: #f9f9f9;
+  padding: 50px;
+}
+.main-text h1{
+  text-align: center;
+  text-shadow: 0px 1px 1px black;
+  font-weight: 600;
+}
+.main-text h1 span{
+  color: #341ceb;
+}
+.book .card{
+  border-radius: 10px;
+  box-shadow: 0px 5px -6px #8bc6eb;
+}
+.book .row{
+  margin-top: 30px;
+}
+.book from input{
+  padding: 10px;
+  color:black;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10px;
+  box-shadow: opx 5px 5px -6px black;
+}
+.book from textarea{
+  border: none;
+  border-radius: 10px;
+  resize: none;
+  box-shadow: opx 5px 5px -6px black;
+  height: 200px;
+}
+
+
+
+@media (max-width:765px){
+  .book{
+    padding: 0;
+  }
+}
+  .main-text h1{
+    margin-top:20px;
+  }
+/*Section Book End*/
+
+
+/* Styling for the packages section */
+.packages{
+background: #f9f9f9;
+padding: 50px;
+}
+.main-txt h1{
+text-align: center;
+text-shadow: 0px 1px 1px black;
+font-weight: 600;
+}
+.main-txt h1 span{
+color: rgb(28, 73, 235);
+}
+
+.packages .card {
+border: 1px solid #ccc; 
+border-radius: 10px; 
+overflow: hidden; 
+box-shadow: 0 0 10px hsla(249, 96%, 51%, 0.888); 
+width: 100%; 
+}
+.packages .card img {
+width: 100%; 
+height: 200px; 
+object-fit: cover; 
+}
+
+
+.packages .card-body {
+padding: 20px; 
+}
+
+.packages .card-body h3 {
+font-size: 24px; 
+margin-top: 0; 
+}
+
+.packages .card-body p {
+font-size: 16px; 
+color: #666; 
+}
+
+.packages .card-body .star {
+margin-bottom: 10px; 
+}
+
+.packages .card-body .star i {
+color: hwb(204 40% 18%); 
+}
+
+.packages .card-body h6 {
+font-size: 18px; 
+margin-bottom: 10px; 
+}
+
+.packages .card-body a {
+display: inline-body;
+padding: 10px 20px; 
+background-color: hwb(203 31% 29%); 
+color: #fff; 
+text-decoration: none; 
+border-radius: 5px; 
+transition: background-color 0.3s ease; 
+}
+
+.packages .card-body a:hover {
+background-color: hwb(203 38% 11%); 
+}
+.card {
+border: 1px solid #ccc; 
+border-radius: 10px; 
+overflow: hidden; 
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.card img {
+width: 100%; 
+height: auto; 
+}
+
+.card-body {
+padding: 20px; 
+}
+
+.card-body h3 {
+font-size: 20px;
+margin-bottom: 10px; 
+}
+
+.card-body p {
+font-size: 16px; 
+color: #666; 
+}
+
+.Symbol {
+margin-bottom: 10px; 
+}
+
+.Symbol i {
+color: hwb(187 27% 30%); 
+font-size: 20px; 
+}
+
+.card-body h6 {
+font-size: 18px; 
+margin-bottom: 10px; 
+}
+
+.card-body a {
+display: inline-block; 
+padding: 10px ;
+background-color: hwb(195 24% 28%); 
+color: #fff; 
+text-decoration: none; 
+border-radius: 5px; 
+transition: background-color 0.3s ease; 
+}
+
+.card-body a:hover {
+background-color: rgb(53, 161, 180); 
+}
+
+
+
+/*Section Packages End*/
+
+/* Styles for Services section */
+.Services {
+padding: 50px 0; 
+background-color: #f8f9fa; 
+}
+
+.main-txt h1 {
+font-size: 36px; 
+text-align: center; 
+}
+
+.card {
+background-color: hsl(189, 78%, 51%); 
+border: 1px solid #ccc; 
+border-radius: 8px; 
+padding: 20px; 
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+transition: box-shadow 0.3s ease; 
+text-align: center; 
+}
+
+.card:hover {
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.card i {
+font-size: 48px; 
+color: hwb(243 15% 11%); 
+margin-bottom: 20px; 
+}
+
+.card h3 {
+font-size: 24px; 
+margin-bottom: 10px; 
+}
+
+.card p {
+font-size: 16px; 
+color: #666; 
+}
+
+/* Section Gallary  End*/
+
+/*Section About Start*/
+.about{
+  padding: 50px;
+  margin-top: 50px;
+background:#f9f9f9;
+}
+.about .card{
+  border-radius: 10px;
+}
+.about .card img{
+  border-radius: 10px;
+}
+.about h2{
+font-weight: 100px;
+letter-spacing: 1px;
+}
+.about p{
+font-size: 20px;
+}
+#about-btn{
+width: 150px;
+height: 38px;
+border: none;
+border: radius 5px; 
+background: hsl(256, 100%, 50%);
+color: white;
+letter-spacing: 2px;
+font-weight: 550;
+transition: 0.5s ease;
+cursor: pointer;
+}
+#about-btn:hover{
+width: 170px;
+}
+
+@media (max-width: 765px){
+.about{
+  padding: 0;
+}
+}
+/* Section About End*/
+
+/* Footer Start */
+#footer{
+width: px;
+margin-top: px;
+text-align: center;
+background: #f9f9f9;
+}
+#footer h1{
+font-weight: 600;
+padding-top: 30px;
+text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+color: hsl(255, 100%, 50%);
+}
+.social-link i{
+padding: px;
+border-radius: px;
+font-size: px;
+background: black;
+color: white;
+margin-block-end: px;
+margin-bottom: px;
+transition: 0.5s ease;
+cursor: pointer;
+}
+.social-links i:hover{
+background: hsl(258, 100%, 50%);
+}
+/* Footer End */
